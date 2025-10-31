@@ -10,8 +10,14 @@ import os , sys
 """ 
     Functions 
 """ 
-def fileButton(): 
-    print("Button clicked")
+def closeFile(): 
+   
+    #prompts the user with a meassagebox and checks the input 
+    if mb.askyesno("Close without Saving", "Close Without Saving? ") == True: 
+        #exit program 
+        sys.exit()
+    else: 
+        pass 
 
 def saveFile(): 
     
@@ -44,10 +50,13 @@ root.title("text editor")
 openButton = tk.Button(root, text="Open", command=openFile)
 openButton.pack()
 
-
 #save button 
 saveButton = tk.Button(root, text="Save", command=saveFile)
 saveButton.pack()
+
+#closeFile 
+closeButton =tk.Button(root, text="Close" , command=closeFile) 
+closeButton.pack()
 
 # Set the window size
 root.geometry("700x600")
