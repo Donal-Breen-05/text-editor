@@ -6,7 +6,7 @@ A small program to create a text editor in python with a GUI
 - can save files to device
 - option betwwen light and dark mode
 
-# file dialouuge 
+# file dialouge 
 ![file](images/file.png)
 i made use of the "filedialouge" library which is part of tkinter to allow me to prompt the user where to save / open files 
 
